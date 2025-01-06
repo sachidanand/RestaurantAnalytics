@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Analytics Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Restaurant Analytics</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#analytics">Analytics</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="hero" id="home">
+        <h1>Welcome to the Restaurant Analytics Dashboard</h1>
+        <p>Gain insights into your restaurant's performance with detailed analytics.</p>
+        <a href="#analytics" class="btn">View Analytics</a>
+    </section>
+
+    <!-- Analytics Section -->
+    <section class="container" id="analytics">
+        <h2>Analytics Dashboard</h2>
+        <p>Track and analyze your restaurant's performance with these detailed charts.</p>
+        
+        <h3>Daily Sales</h3>
+        <p>Track your daily sales to understand peak business hours and days.</p>
+        <div class="chart-container">
+            <canvas id="dailySalesChart"></canvas>
+        </div>
+        
+        <h3>Monthly Sales</h3>
+        <p>Analyze your monthly sales to identify trends and plan for the future.</p>
+        <div class="chart-container">
+            <canvas id="monthlySalesChart"></canvas>
+        </div>
+        
+        <h3>Yearly Sales</h3>
+        <p>Review your yearly sales to measure growth and set long-term goals.</p>
+        <div class="chart-container">
+            <canvas id="yearlySalesChart"></canvas>
+        </div>
+        
+        <h3>Inventory Status</h3>
+        <p>Monitor your inventory levels to ensure you never run out of essential items.</p>
+        <div class="chart-container">
+            <canvas id="inventoryChart"></canvas>
+        </div>
+        
+        <h3>Best Selling Items</h3>
+        <p>Identify your best-selling items to optimize your menu and marketing strategies.</p>
+        <div class="chart-container">
+            <canvas id="bestSellingItemsChart"></canvas>
+        </div>
+        
+        <h3>Most Profitable Items</h3>
+        <p>Discover which items contribute the most to your profits.</p>
+        <div class="chart-container">
+            <canvas id="mostProfitableItemsChart"></canvas>
+        </div>
+        
+        <h3>Customer Sentiments</h3>
+        <p>Analyze customer feedback to improve your service and offerings.</p>
+        <div class="chart-container">
+            <canvas id="customerSentimentsChart"></canvas>
+        </div>
+        
+        <h3>Sales by Zip Code (Seattle)</h3>
+        <p>Understand where your customers are coming from to target your marketing efforts.</p>
+        <div class="chart-container">
+            <canvas id="salesByZipCodeChart"></canvas>
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top">
+        <a href="#home" class="btn">Back to Top</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 All rights reserved to Sachidanand Semwal</p>
+    </footer>
+    <script src="js/analytics.js"></script>
+</body>
+</html>
